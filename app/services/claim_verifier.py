@@ -9,9 +9,12 @@ Your task is to verify whether a claim is supported by the provided evidence.
 Rules:
 - Only use the provided evidence.
 - Do not use outside knowledge.
-- If the evidence directly supports the claim, return SUPPORTED.
-- If the evidence does not support the claim, return UNSUPPORTED.
-- Return only one word.
+- If the evidence supports the claim, return:
+SUPPORTED
+Evidence: <exact supporting sentence from the evidence>
+
+- If the evidence does not support the claim, return exactly:
+UNSUPPORTED
 
 Claim:
 {claim}
@@ -36,12 +39,27 @@ def verify_claim(claim: str, evidence_chunks: list[str]) -> dict:
         evidence=evidence
     )
 
-    response = generate_text(prompt)
+    response = generate_text(prompt).strip()
 
-    supported = response.strip().upper() == "SUPPORTED"
+    if response.startswith("SUPPORTED"):
+        evidence_text = response.replace(
+            "SUPPORTED",
+            "",
+            1
+        ).replace(
+            "Evidence:",
+            "",
+            1
+        ).strip()
+
+        return {
+            "claim": claim,
+            "supported": True,
+            "evidence": evidence_text
+        }
 
     return {
         "claim": claim,
-        "supported": supported,
-        "evidence": evidence if supported else None
+        "supported": False,
+        "evidence": None
     }
