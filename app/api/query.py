@@ -1,19 +1,16 @@
 from fastapi import APIRouter
 
 from app.models.query import QueryRequest
-from app.services.retriever import retrieve_chunks
+from app.services.rag_pipeline import answer_question
 
 router = APIRouter(prefix="/query", tags=["Query"])
 
 
 @router.post("/")
 def query_documents(request: QueryRequest):
-    chunks = retrieve_chunks(
+    result = answer_question(
         question=request.question,
         top_k=request.top_k,
     )
 
-    return {
-        "question": request.question,
-        "retrieved_chunks": chunks,
-    }
+    return result
