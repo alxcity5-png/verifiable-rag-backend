@@ -2,49 +2,32 @@ from app.services.retriever import retrieve_chunks
 from app.services.llm_service import generate_answer
 
 
-def answer_question(question: str, top_k: int = 3):
+def clean_text(text: str) -> str:
     """
-    Complete RAG pipeline:
-    Question -> Retrieval -> LLM answer
+    Remove problematic control characters from extracted PDF text.
     """
+    return (
+        text.replace("\x00", "")
+            .replace("\r", "")
+            .strip()
+    )
 
-    # Retrieve evidence
+
+def answer_question(question: str, top_k: int = 3):
     chunks = retrieve_chunks(
         question=question,
         top_k=top_k
     )
 
-
-    # Combine retrieved chunks into context
     context = "\n\n".join(
-        [
-            chunk["chunk"]
-            for chunk in chunks
-        ]
+        clean_text(chunk["chunk"])
+        for chunk in chunks
     )
 
-
-    # Create prompt for LLM
-    prompt = f"""
-You are a helpful assistant answering questions from documents.
-
-Use only the provided context.
-If the answer is not present in the context, say:
-"I could not find this information in the document."
-
-Context:
-{context}
-
-Question:
-{question}
-
-Answer:
-"""
-
-
-    # Generate answer
-    answer = generate_answer(prompt)
-
+    answer = generate_answer(
+        context=context,
+        question=question
+    )
 
     return {
         "question": question,

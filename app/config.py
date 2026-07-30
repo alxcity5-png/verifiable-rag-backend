@@ -1,3 +1,5 @@
+import os
+
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -14,6 +16,10 @@ class Settings:
     # Embedding model
     EMBEDDING_MODEL = "all-MiniLM-L6-v2"
 
+    # Groq
+    GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+    GROQ_MODEL = "llama-3.1-8b-instant"
+
 
 settings = Settings()
 
@@ -21,3 +27,5 @@ settings = Settings()
 UPLOAD_DIR = settings.UPLOAD_DIR
 CHROMA_DB_PATH = settings.CHROMA_DB_PATH
 EMBEDDING_MODEL = settings.EMBEDDING_MODEL
+GROQ_API_KEY = settings.GROQ_API_KEY
+GROQ_MODEL = settings.GROQ_MODEL

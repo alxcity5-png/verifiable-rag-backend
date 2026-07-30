@@ -1,26 +1,49 @@
-import requests
+from groq import Groq
+
+from app.config import GROQ_API_KEY, GROQ_MODEL
+
+client = Groq(api_key=GROQ_API_KEY)
 
 
-OLLAMA_URL = "http://localhost:11434/api/generate"
-MODEL_NAME = "llama3.2:3b"
+def generate_answer(context: str, question: str):
+    response = client.chat.completions.create(
+        model=GROQ_MODEL,
+        temperature=0,
+        top_p=0.1,
+        max_tokens=64,
+        messages=[
+            {
+                "role": "system",
+                "content": (
+                    "You are an information extraction engine.\n"
+                    "Your ONLY source of truth is the supplied context.\n"
+                    "Never use outside knowledge.\n"
+                    "Never invent facts.\n"
+                    "Return only the direct answer.\n"
+                    "If the answer is not explicitly present in the context, "
+                    "return exactly:\n"
+                    "I could not find this information in the document."
+                ),
+            },
+            {
+                "role": "user",
+                "content": f"""
+CONTEXT
+--------
+{context}
 
+QUESTION
+--------
+{question}
 
-def generate_answer(prompt: str):
-    """
-    Generate an answer using Ollama LLM.
-    """
-
-    response = requests.post(
-        OLLAMA_URL,
-        json={
-            "model": MODEL_NAME,
-            "prompt": prompt,
-            "stream": False
-        }
+Extract ONLY the answer from the context.
+Do not explain.
+Do not summarize.
+Do not add extra information.
+""",
+            },
+        ],
+        stop=["\n\n"],
     )
 
-    response.raise_for_status()
-
-    result = response.json()
-
-    return result["response"]
+    return response.choices[0].message.content.strip()

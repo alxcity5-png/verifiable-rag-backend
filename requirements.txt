@@ -5,3 +5,5 @@ python-multipart
 pypdf
 chromadb
 sentence-transformers
+groq
+requests
