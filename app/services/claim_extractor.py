@@ -2,24 +2,24 @@ from app.services.llm_service import generate_text
 
 
 CLAIM_EXTRACTION_PROMPT = """
-You are an information extraction assistant.
+You are a fact extraction assistant.
 
-Your task is to convert the answer into individual complete factual claims.
+Your task is to extract only the most important factual claims from the answer.
 
-Use the question to understand the context of the answer.
+Use the question to understand the context.
 
 Rules:
-- Return one complete factual claim per line.
-- The claim must be understandable without seeing the question.
-- If the answer is a date, name, number, or short phrase, include the context from the question.
-- Keep related details together in the same claim.
-- Do not split dates, names, numbers, locations, or other details that belong to the same fact.
-- Do not create duplicate claims.
-- Do not add information that is not present in the question or answer.
-- Preserve the original meaning.
-- Do not number the claims.
+- Return only complete standalone factual claims.
+- Prefer fewer, stronger claims over many small claims.
+- Combine related facts into one claim when they describe the same event or fact.
+- Do not split names, dates, courses, locations, or numbers away from the fact they belong to.
+- Do not create duplicate or overlapping claims.
+- Do not repeat the same fact in different wording.
+- Do not add information that is not present in the answer.
+- Preserve the meaning of the answer.
+- Do not number claims.
 - Do not use bullet points.
-- If the answer contains no factual claims, return exactly:
+- If there are no factual claims, return exactly:
 NO_CLAIMS
 
 Question:
@@ -32,11 +32,7 @@ Answer:
 
 def extract_claims(question: str, answer: str) -> list[str]:
     """
-    Extract individual factual claims from an answer.
-
-    Args:
-        question: Original user question.
-        answer: Generated answer.
+    Extract high-quality factual claims from an answer.
 
     Returns:
         List[str]: List of factual claims.
