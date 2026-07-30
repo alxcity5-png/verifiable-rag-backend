@@ -30,7 +30,10 @@ def answer_question(question: str, top_k: int = 3):
         question=question
     )
 
-    claims = extract_claims(answer)
+    claims = extract_claims(
+        question=question,
+        answer=answer
+    )
 
     return {
         "question": question,
