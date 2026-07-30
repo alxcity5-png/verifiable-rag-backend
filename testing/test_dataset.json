@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "CAMPUS-01",
+    "domain": "Campus IT / Edge Computing Policy",
+    "source_document": "mock_campus_device_regulations_2026.pdf",
+    "question": "How many edge nodes can be operated without registration, and how many working days before deployment must a registration application be submitted?",
+    "ground_truth_answer": "Up to two edge nodes may be operated without registration. An application must be submitted at least seven working days before deployment.",
+    "correct_source_chunk": "No person or club shall operate more than two edge nodes on the campus network without prior registration with the registering authority. An application for registration shall be submitted in Form ER-1 at least seven working days before deployment and shall be either approved or rejected within fifteen working days of submission.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "CAMPUS-02",
+    "domain": "Campus IT / Edge Computing Policy",
+    "source_document": "mock_campus_device_regulations_2026.pdf",
+    "question": "What is the fine for operating a sensitive workload without Tier-2 registration?",
+    "ground_truth_answer": "A fine not exceeding Rs. 2,000, credited to the Student Welfare Fund, along with immediate disconnection.",
+    "correct_source_chunk": "Operation of a sensitive workload without Tier-2 registration shall attract immediate disconnection and a fine not exceeding Rs. 2,000, to be credited to the Student Welfare Fund.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CAMPUS-03",
+    "domain": "Campus IT / Edge Computing Policy",
+    "source_document": "mock_campus_device_regulations_2026.pdf",
+    "question": "When do these Regulations come into force?",
+    "ground_truth_answer": "They come into force on 1st August 2026.",
+    "correct_source_chunk": "They shall come into force on 1st August 2026.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CAMPUS-04",
+    "domain": "Campus IT / Edge Computing Policy",
+    "source_document": "mock_campus_device_regulations_2026.pdf",
+    "question": "Who is the registering authority under these Regulations?",
+    "ground_truth_answer": "The Campus IT Security Office is the registering authority.",
+    "correct_source_chunk": "\u201cregistering authority\u201d means the Campus IT Security Office",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CAMPUS-05",
+    "domain": "Campus IT / Edge Computing Policy",
+    "source_document": "mock_campus_device_regulations_2026.pdf",
+    "question": "What network can an edge node be connected to, and what is it explicitly barred from?",
+    "ground_truth_answer": "An edge node may only connect to the designated IoT-VLAN, and must never be bridged to the administrative or examination network.",
+    "correct_source_chunk": "Every edge node shall be connected only to the designated IoT-VLAN and shall not be bridged to the administrative or examination network under any circumstance.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CAMPUS-06",
+    "domain": "Campus IT / Edge Computing Policy",
+    "source_document": "mock_campus_device_regulations_2026.pdf",
+    "question": "What is the maximum continuous power an edge node cluster can draw, and how quickly must a device with a damaged battery be surrendered?",
+    "ground_truth_answer": "No more than 500 watts of continuous power from a single hostel room circuit. Devices with damaged or swollen batteries must be surrendered within 48 hours of detection.",
+    "correct_source_chunk": "No edge node cluster shall draw more than 500 watts of continuous power from a single hostel room circuit. Devices with damaged or swollen batteries shall not be used as edge nodes and shall be surrendered to the E-Waste Collection Point within 48 hours of detection.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "CAMPUS-07",
+    "domain": "Campus IT / Edge Computing Policy",
+    "source_document": "mock_campus_device_regulations_2026.pdf",
+    "question": "What does Tier-2 registration require?",
+    "ground_truth_answer": "Disk encryption, a signed data-handling declaration, and a biannual audit by the registering authority.",
+    "correct_source_chunk": "A Tier-2 registration requires disk encryption, a signed data-handling declaration, and biannual audit by the registering authority.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CAMPUS-08",
+    "domain": "Campus IT / Edge Computing Policy",
+    "source_document": "mock_campus_device_regulations_2026.pdf",
+    "question": "What happens on the first versus second detection of an unregistered edge node, and what happens for repeated violations within the same academic year?",
+    "ground_truth_answer": "First detection gets a written warning; second detection results in disconnection. Repeated violation within the same academic year is referred to the Disciplinary Committee.",
+    "correct_source_chunk": "Operation of an unregistered edge node shall attract a written warning on first detection and disconnection from the network on second detection. Repeated violation within the same academic year shall be referred to the Disciplinary Committee.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "CAMPUS-09",
+    "domain": "Campus IT / Edge Computing Policy",
+    "source_document": "mock_campus_device_regulations_2026.pdf",
+    "question": "How long does someone have to appeal a disconnection order, and how long does the appeal take to resolve?",
+    "ground_truth_answer": "An appeal must be filed within ten working days of the order, and it is disposed of within thirty working days.",
+    "correct_source_chunk": "Any person aggrieved by an order of disconnection under Regulation 7 may file an appeal to the Dean of Student Affairs within ten working days of such order, and the appeal shall be disposed of within thirty working days.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "CAMPUS-10",
+    "domain": "Campus IT / Edge Computing Policy",
+    "source_document": "mock_campus_device_regulations_2026.pdf",
+    "question": "How often are these Regulations reviewed?",
+    "ground_truth_answer": "Once every two academic years, or earlier if directed by the Institute administration.",
+    "correct_source_chunk": "These Regulations shall be reviewed by the Campus IT Security Office once every two academic years, or earlier if directed by the Institute administration.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "TELE-01",
+    "domain": "Healthcare / Telemedicine",
+    "source_document": "mock_telemedicine_practice_guidelines.pdf",
+    "question": "Can List X medicines be prescribed through a text-only consultation?",
+    "ground_truth_answer": "No. List X medicines can never be prescribed through a text-only consultation; they require a video consultation with the practitioner's digital signature.",
+    "correct_source_chunk": "List X medicines (controlled substances, including certain opioids and benzodiazepines) shall never be prescribed through a text-only consultation and require a video consultation with the practitioner's digital signature.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "TELE-02",
+    "domain": "Healthcare / Telemedicine",
+    "source_document": "mock_telemedicine_practice_guidelines.pdf",
+    "question": "How long is a telemedicine prescription valid for acute versus chronic conditions, and how long must consultation records be retained?",
+    "ground_truth_answer": "A prescription is valid for 7 days for acute conditions and 30 days for chronic conditions. Consultation records must be retained for a minimum of 3 years.",
+    "correct_source_chunk": "A telemedicine prescription is valid for 7 days for acute conditions and 30 days for chronic conditions, unless otherwise specified. Every practitioner must retain consultation notes, prescriptions, and patient consent records for a minimum of 3 years from the date of consultation.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "TELE-03",
+    "domain": "Healthcare / Telemedicine",
+    "source_document": "mock_telemedicine_practice_guidelines.pdf",
+    "question": "What must a practitioner complete before offering remote consultations?",
+    "ground_truth_answer": "A valid registration with the State Medical Council and a mandatory 4-hour telemedicine orientation module.",
+    "correct_source_chunk": "A practitioner must hold a valid registration with the State Medical Council and complete a mandatory 4-hour telemedicine orientation module before offering remote consultations.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "TELE-04",
+    "domain": "Healthcare / Telemedicine",
+    "source_document": "mock_telemedicine_practice_guidelines.pdf",
+    "question": "How often must a practitioner's registration be renewed, and how often must the orientation module be repeated?",
+    "ground_truth_answer": "Registration must be renewed every 5 years, and the orientation module must be repeated every 3 years.",
+    "correct_source_chunk": "Registration must be renewed every 5 years, and the orientation module must be repeated once every 3 years to remain eligible.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "TELE-05",
+    "domain": "Healthcare / Telemedicine",
+    "source_document": "mock_telemedicine_practice_guidelines.pdf",
+    "question": "If a chronic condition is diagnosed at a first consultation, when must an in-person or video review happen, and how long is a follow-up consultation valid for the same condition?",
+    "ground_truth_answer": "The review must happen within 6 months. A follow-up consultation for the same condition is valid for up to 90 days from the previous consultation.",
+    "correct_source_chunk": "A first consultation must be followed by an in-person or video review within 6 months if a chronic condition is diagnosed. A follow-up consultation for the same condition is valid for up to 90 days from the previous consultation, after which a fresh first consultation is required.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "TELE-06",
+    "domain": "Healthcare / Telemedicine",
+    "source_document": "mock_telemedicine_practice_guidelines.pdf",
+    "question": "Within how long must an emergency triage consultation be escalated to in-person care if red-flag symptoms are reported?",
+    "ground_truth_answer": "Within 1 hour.",
+    "correct_source_chunk": "Emergency triage consultations must be escalated to in-person care within 1 hour if red-flag symptoms are reported.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "TELE-07",
+    "domain": "Healthcare / Telemedicine",
+    "source_document": "mock_telemedicine_practice_guidelines.pdf",
+    "question": "When can List A medicines be prescribed?",
+    "ground_truth_answer": "Only from the second consultation onward for the same condition.",
+    "correct_source_chunk": "List A medicines (e.g., for chronic conditions such as hypertension) may only be prescribed from the second consultation onward for the same condition.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "TELE-08",
+    "domain": "Healthcare / Telemedicine",
+    "source_document": "mock_telemedicine_practice_guidelines.pdf",
+    "question": "Where must telemedicine records be stored, and how must they be protected?",
+    "ground_truth_answer": "Records must be stored on servers located within the country and encrypted at rest.",
+    "correct_source_chunk": "Records must be stored on servers located within the country and encrypted at rest.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "TELE-09",
+    "domain": "Healthcare / Telemedicine",
+    "source_document": "mock_telemedicine_practice_guidelines.pdf",
+    "question": "What happens if a practitioner prescribes a List X medicine in violation of the text-only rule?",
+    "ground_truth_answer": "It is treated as professional misconduct and referred to the State Medical Council.",
+    "correct_source_chunk": "Prescribing a List X medicine in violation of Section 4.3 shall be treated as professional misconduct and referred to the State Medical Council.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "TELE-10",
+    "domain": "Healthcare / Telemedicine",
+    "source_document": "mock_telemedicine_practice_guidelines.pdf",
+    "question": "What is the consequence of a repeat record-keeping failure within 2 years?",
+    "ground_truth_answer": "A written warning on the first instance, and suspension of telemedicine privileges for 90 days on a repeat instance within 2 years.",
+    "correct_source_chunk": "Failure to maintain records under Section 5.1 shall attract a written warning on first instance and suspension of telemedicine privileges for 90 days on a repeat instance within 2 years.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "RTI-01",
+    "domain": "RTI / Government Transparency",
+    "source_document": "reference_rti_act_structure_summary.pdf",
+    "question": "Within how many days must a public authority normally respond to an information request, and what is the timeline when life or liberty is involved?",
+    "ground_truth_answer": "Normally within 30 days. Where the request concerns a person's life or liberty, the response timeline is shortened to 48 hours.",
+    "correct_source_chunk": "A citizen's request for information must normally be answered within 30 days of receipt. Where the request concerns a person's life or liberty, the response timeline is shortened to 48 hours.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "RTI-02",
+    "domain": "RTI / Government Transparency",
+    "source_document": "reference_rti_act_structure_summary.pdf",
+    "question": "What is the appeal structure under the RTI Act?",
+    "ground_truth_answer": "A two-tier process: a first appeal to a designated senior officer within the same public authority, followed by a second appeal to the Information Commission if unsatisfied.",
+    "correct_source_chunk": "The Act provides a two-tier appeal process. A first appeal against denial or delay is made to a designated senior officer within the same public authority. If unsatisfied, the citizen may file a second appeal with the Information Commission.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "RTI-03",
+    "domain": "RTI / Government Transparency",
+    "source_document": "reference_rti_act_structure_summary.pdf",
+    "question": "What was the purpose behind enacting the RTI Act?",
+    "ground_truth_answer": "To give citizens a practical way to access information held by public authorities, improving transparency and accountability, and it also established Central and State Information Commissions.",
+    "correct_source_chunk": "The law was enacted by Parliament to give citizens a practical way to access information held by public authorities, with the aim of improving transparency and accountability in government functioning. It also established a Central Information Commission and State Information Commissions to oversee implementation.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "RTI-04",
+    "domain": "RTI / Government Transparency",
+    "source_document": "reference_rti_act_structure_summary.pdf",
+    "question": "How does the Act define \u201cpublic authority\u201d?",
+    "ground_truth_answer": "Broadly, to include any body established under the Constitution, by an Act of Parliament or a state legislature, or substantially funded by the government.",
+    "correct_source_chunk": "The Act defines a \u201cpublic authority\u201d broadly to include any body established under the Constitution, by an Act of Parliament or a state legislature, or substantially funded by the government.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "RTI-05",
+    "domain": "RTI / Government Transparency",
+    "source_document": "reference_rti_act_structure_summary.pdf",
+    "question": "How does the Act define \u201cinformation\u201d?",
+    "ground_truth_answer": "Expansively, covering records, documents, memos, emails, opinions, and data held in any electronic form.",
+    "correct_source_chunk": "It also defines \u201cinformation\u201d expansively to cover records, documents, memos, emails, opinions, and data held in any electronic form.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "RTI-06",
+    "domain": "RTI / Government Transparency",
+    "source_document": "reference_rti_act_structure_summary.pdf",
+    "question": "What are public authorities required to do proactively, and who handles citizen requests?",
+    "ground_truth_answer": "They must proactively publish certain categories of information, such as organisational structure, powers, and duties, and appoint Public Information Officers to handle requests.",
+    "correct_source_chunk": "Every public authority is required to proactively publish certain categories of information (such as its organisational structure, powers, and duties) and to appoint Public Information Officers responsible for handling citizen requests.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "RTI-07",
+    "domain": "RTI / Government Transparency",
+    "source_document": "reference_rti_act_structure_summary.pdf",
+    "question": "What extra time is allowed if a request is routed through an Assistant Public Information Officer?",
+    "ground_truth_answer": "An additional 5 days is allowed before the 30-day clock effectively starts.",
+    "correct_source_chunk": "If the request is routed through an Assistant Public Information Officer, an additional 5 days is allowed before the 30-day clock effectively starts.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "RTI-08",
+    "domain": "RTI / Government Transparency",
+    "source_document": "reference_rti_act_structure_summary.pdf",
+    "question": "What categories of information are exempted from disclosure under the Act?",
+    "ground_truth_answer": "Matters affecting national security, information that would breach individual privacy with no larger public interest, and information held under a fiduciary relationship (subject to public-interest override).",
+    "correct_source_chunk": "Certain categories of information are exempted from disclosure, including matters affecting national security, information that would breach the privacy of an individual with no larger public interest, and information held under a fiduciary relationship, subject to the public authority's discretion to disclose if public interest outweighs the harm.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "RTI-09",
+    "domain": "RTI / Government Transparency",
+    "source_document": "reference_rti_act_structure_summary.pdf",
+    "question": "What can an Information Commission do if a Public Information Officer unreasonably delays a response?",
+    "ground_truth_answer": "It can impose a penalty calculated on a per-day basis (subject to a prescribed upper limit) and recommend disciplinary action under applicable service rules.",
+    "correct_source_chunk": "An Information Commission can impose a penalty on a Public Information Officer for unreasonable delay, malafide denial, or providing incorrect or incomplete information, calculated on a per-day basis subject to a prescribed upper limit, in addition to recommending disciplinary action under applicable service rules.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "RTI-10",
+    "domain": "RTI / Government Transparency",
+    "source_document": "reference_rti_act_structure_summary.pdf",
+    "question": "Besides unreasonable delay, what other conduct by a Public Information Officer can attract a penalty?",
+    "ground_truth_answer": "Malafide denial of a request, or providing incorrect or incomplete information.",
+    "correct_source_chunk": "An Information Commission can impose a penalty on a Public Information Officer for unreasonable delay, malafide denial, or providing incorrect or incomplete information",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "GIG-01",
+    "domain": "Labor / Gig Economy",
+    "source_document": "mock_gig_worker_wage_protection_code_2026.pdf",
+    "question": "What is the minimum payout guarantee per completed task, and within how many hours must earnings be settled?",
+    "ground_truth_answer": "Rs. 25 per completed task or the applicable per-hour minimum wage, whichever is higher. Earnings must be settled within 48 hours of task completion.",
+    "correct_source_chunk": "A platform shall guarantee a minimum payout of Rs. 25 per completed task or the applicable per-hour minimum wage, whichever is higher. Earnings for completed tasks shall be settled to the worker's registered account within 48 hours of task completion.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "GIG-02",
+    "domain": "Labor / Gig Economy",
+    "source_document": "mock_gig_worker_wage_protection_code_2026.pdf",
+    "question": "After how many continuous active hours is a worker entitled to a mandatory cooldown, and how long is it?",
+    "ground_truth_answer": "After 12 continuous active hours in a single day, an 8-hour cooldown is triggered before further task assignment.",
+    "correct_source_chunk": "Continuous active hours exceeding 12 in a single day shall trigger a mandatory 8-hour cooldown before further task assignment.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "GIG-03",
+    "domain": "Labor / Gig Economy",
+    "source_document": "mock_gig_worker_wage_protection_code_2026.pdf",
+    "question": "Which platforms does this Code apply to, and how is an occasional worker defined?",
+    "ground_truth_answer": "It applies to platforms engaging 50 or more gig workers. A worker completing fewer than 8 tasks in a calendar month is classified as an occasional worker.",
+    "correct_source_chunk": "This Code applies to any digital platform that engages 50 or more gig workers for delivery, ride-hailing, or home-service tasks within the State. A worker who completes fewer than 8 tasks in a calendar month is classified as an occasional worker and is covered only by Sections 4 and 6 of this Code.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "GIG-04",
+    "domain": "Labor / Gig Economy",
+    "source_document": "mock_gig_worker_wage_protection_code_2026.pdf",
+    "question": "What cancellation fee is owed if a platform cancels a task after the worker has already travelled toward pickup?",
+    "ground_truth_answer": "A cancellation fee of not less than Rs. 30, if the worker has travelled more than 1 km toward pickup.",
+    "correct_source_chunk": "Where a task is cancelled by the platform after a worker has travelled more than 1 km toward pickup, a cancellation fee of not less than Rs. 30 shall be paid to the worker.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "GIG-05",
+    "domain": "Labor / Gig Economy",
+    "source_document": "mock_gig_worker_wage_protection_code_2026.pdf",
+    "question": "What happens to a disputed deduction if the platform doesn't resolve it within 7 working days?",
+    "ground_truth_answer": "The disputed amount must be paid in full pending resolution.",
+    "correct_source_chunk": "Any deduction disputed by a worker shall be resolved by the platform within 7 working days, failing which the disputed amount shall be paid in full pending resolution.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "GIG-06",
+    "domain": "Labor / Gig Economy",
+    "source_document": "mock_gig_worker_wage_protection_code_2026.pdf",
+    "question": "After how many continuous hours without a break can a platform no longer algorithmically assign tasks, and how long must that break be?",
+    "ground_truth_answer": "After more than 10 continuous hours without a break, and the break must be at least 30 minutes.",
+    "correct_source_chunk": "A platform shall not algorithmically assign tasks to a worker who has been active on the platform for more than 10 continuous hours without a break of at least 30 minutes.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "GIG-07",
+    "domain": "Labor / Gig Economy",
+    "source_document": "mock_gig_worker_wage_protection_code_2026.pdf",
+    "question": "How quickly must a grievance cell acknowledge and resolve a worker's complaint?",
+    "ground_truth_answer": "It must acknowledge within 24 hours and resolve within 15 working days.",
+    "correct_source_chunk": "Every platform shall establish a grievance cell that acknowledges a worker's complaint within 24 hours and resolves it within 15 working days.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "GIG-08",
+    "domain": "Labor / Gig Economy",
+    "source_document": "mock_gig_worker_wage_protection_code_2026.pdf",
+    "question": "How long does a worker have to escalate a dissatisfying grievance outcome to the State Gig Workers Welfare Board?",
+    "ground_truth_answer": "Within 30 days of the platform's resolution.",
+    "correct_source_chunk": "A worker dissatisfied with the outcome may escalate to the State Gig Workers Welfare Board within 30 days of the platform's resolution.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "GIG-09",
+    "domain": "Labor / Gig Economy",
+    "source_document": "mock_gig_worker_wage_protection_code_2026.pdf",
+    "question": "What penalty applies for late payment settlement under Section 3.1?",
+    "ground_truth_answer": "A penalty of 2% of the delayed amount per week of delay, payable to the worker.",
+    "correct_source_chunk": "Failure to settle payments within the timeline under Section 3.1 shall attract a penalty of 2% of the delayed amount per week of delay, payable to the worker.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "GIG-10",
+    "domain": "Labor / Gig Economy",
+    "source_document": "mock_gig_worker_wage_protection_code_2026.pdf",
+    "question": "What is the consequence of repeated violation of the working-hours rules within a quarter?",
+    "ground_truth_answer": "A fine on the platform not exceeding Rs. 5,00,000 and possible suspension of the platform's operating registration for up to 60 days.",
+    "correct_source_chunk": "Repeated violation of Section 4 within a quarter shall attract a fine on the platform not exceeding Rs. 5,00,000 and may result in suspension of the platform's operating registration for up to 60 days.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "FIN-01",
+    "domain": "Fintech / Digital Lending",
+    "source_document": "mock_digital_lending_consumer_safeguards_2026.pdf",
+    "question": "What is the cooling-off period for a digital loan, and how does it change for loans under 7 days tenure?",
+    "ground_truth_answer": "3 working days for a standard digital loan, exit without penalty. For loans with tenure less than 7 days, it is reduced to 1 working day.",
+    "correct_source_chunk": "A borrower may exit a digital loan without penalty within 3 working days of disbursal by repaying the principal and proportionate interest for the period the loan was held. For loans with tenure of less than 7 days, the cooling-off period is reduced to 1 working day.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "FIN-02",
+    "domain": "Fintech / Digital Lending",
+    "source_document": "mock_digital_lending_consumer_safeguards_2026.pdf",
+    "question": "What are the permitted hours for a lender or recovery agent to contact a borrower?",
+    "ground_truth_answer": "Contact is not permitted before 8 AM or after 7 PM.",
+    "correct_source_chunk": "A lender or its recovery agent shall not contact a borrower before 8 AM or after 7 PM.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "FIN-03",
+    "domain": "Fintech / Digital Lending",
+    "source_document": "mock_digital_lending_consumer_safeguards_2026.pdf",
+    "question": "What loan amount threshold do these guidelines apply to?",
+    "ground_truth_answer": "Short-tenure digital loans below Rs. 5,00,000 offered through mobile applications or web platforms.",
+    "correct_source_chunk": "These guidelines apply to all regulated entities and their lending service providers offering short-tenure digital loans below Rs. 5,00,000 through mobile applications or web platforms.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "FIN-04",
+    "domain": "Fintech / Digital Lending",
+    "source_document": "mock_digital_lending_consumer_safeguards_2026.pdf",
+    "question": "What must a lender disclose before loan disbursal, and in what format?",
+    "ground_truth_answer": "The Annual Percentage Rate, all processing fees, and the total repayment amount, disclosed in a standardised Key Fact Statement.",
+    "correct_source_chunk": "A lender must disclose the Annual Percentage Rate, all processing fees, and the total repayment amount to the borrower before loan disbursal, in a standardised Key Fact Statement.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "FIN-05",
+    "domain": "Fintech / Digital Lending",
+    "source_document": "mock_digital_lending_consumer_safeguards_2026.pdf",
+    "question": "Can the Key Fact Statement be bundled with other consents?",
+    "ground_truth_answer": "No. It must be presented in a font size no smaller than the rest of the application and cannot be bundled with other consents.",
+    "correct_source_chunk": "The Key Fact Statement must be presented in a font size no smaller than the rest of the application and cannot be bundled with other consents.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "FIN-06",
+    "domain": "Fintech / Digital Lending",
+    "source_document": "mock_digital_lending_consumer_safeguards_2026.pdf",
+    "question": "Under what condition can a lender contact a borrower's listed references, and after how many failed attempts?",
+    "ground_truth_answer": "Only to obtain updated contact information for the borrower, and only after 3 failed attempts to reach the borrower directly.",
+    "correct_source_chunk": "Contact with a borrower's listed references for recovery purposes is prohibited except to obtain updated contact information for the borrower, and only after 3 failed attempts to reach the borrower directly.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "FIN-07",
+    "domain": "Fintech / Digital Lending",
+    "source_document": "mock_digital_lending_consumer_safeguards_2026.pdf",
+    "question": "What personal data is a lending app prohibited from accessing?",
+    "ground_truth_answer": "A borrower's contact list, photo gallery, or call logs.",
+    "correct_source_chunk": "A lending app shall not access a borrower's contact list, photo gallery, or call logs.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "FIN-08",
+    "domain": "Fintech / Digital Lending",
+    "source_document": "mock_digital_lending_consumer_safeguards_2026.pdf",
+    "question": "How long can underwriting data be retained after loan closure without extra consent?",
+    "ground_truth_answer": "Data must be deleted within 90 days of loan closure unless the borrower separately consents to longer retention.",
+    "correct_source_chunk": "Any data collected for underwriting must be deleted within 90 days of loan closure unless the borrower separately consents to longer retention.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "FIN-09",
+    "domain": "Fintech / Digital Lending",
+    "source_document": "mock_digital_lending_consumer_safeguards_2026.pdf",
+    "question": "What is the penalty for violating the recovery-practices rules under Section 4?",
+    "ground_truth_answer": "A monetary penalty of up to Rs. 1,00,000 per instance on the regulated entity.",
+    "correct_source_chunk": "Violation of Section 4 shall attract a monetary penalty of up to Rs. 1,00,000 per instance on the regulated entity.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "FIN-10",
+    "domain": "Fintech / Digital Lending",
+    "source_document": "mock_digital_lending_consumer_safeguards_2026.pdf",
+    "question": "What happens if a lending service provider commits 3 or more substantiated data-handling violations within a financial year?",
+    "ground_truth_answer": "It shall be delisted for a minimum of 1 year.",
+    "correct_source_chunk": "Three or more substantiated violations of Section 5 within a financial year shall result in the lending service provider being delisted for a minimum of 1 year.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "FOOD-01",
+    "domain": "Food Safety",
+    "source_document": "mock_cloud_kitchen_food_safety_standards_2026.pdf",
+    "question": "For how long can cooked food be held outside the safe temperature range before it must be discarded?",
+    "ground_truth_answer": "More than 2 hours outside the safe range (below 60\u00b0C for hot items, above 5\u00b0C for cold items) means the food must be discarded and not dispatched.",
+    "correct_source_chunk": "Cooked food awaiting dispatch shall not be held at a temperature below 60\u00b0C for hot items or above 5\u00b0C for cold items for more than 2 hours. Any food held outside these ranges beyond the 2-hour limit shall be discarded and not dispatched for delivery.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "FOOD-02",
+    "domain": "Food Safety",
+    "source_document": "mock_cloud_kitchen_food_safety_standards_2026.pdf",
+    "question": "How many substantiated food-safety complaints within 90 days lead to delisting, and how often are surprise hygiene audits conducted?",
+    "ground_truth_answer": "3 or more substantiated complaints within a rolling 90-day period lead to delisting. Surprise hygiene audits occur at least once every 6 months.",
+    "correct_source_chunk": "A kitchen with 3 or more substantiated food-safety complaints within a rolling 90-day period shall be delisted from all platforms pending investigation. A cloud kitchen shall undergo a surprise hygiene audit at least once every 6 months.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "FOOD-03",
+    "domain": "Food Safety",
+    "source_document": "mock_cloud_kitchen_food_safety_standards_2026.pdf",
+    "question": "At what annual turnover does a cloud kitchen need a State food safety licence, and how often must it be renewed?",
+    "ground_truth_answer": "Above Rs. 12 lakh annual turnover, and the licence must be renewed every 5 years.",
+    "correct_source_chunk": "Every cloud kitchen with an annual turnover above Rs. 12 lakh must hold a valid State food safety licence, renewable every 5 years.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "FOOD-04",
+    "domain": "Food Safety",
+    "source_document": "mock_cloud_kitchen_food_safety_standards_2026.pdf",
+    "question": "What must a kitchen operating more than 3 delivery-only brands from one premises display?",
+    "ground_truth_answer": "All licence numbers on each brand's ordering page.",
+    "correct_source_chunk": "A kitchen operating more than 3 delivery-only brands from a single premises must display all licence numbers on each brand's ordering page.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "FOOD-05",
+    "domain": "Food Safety",
+    "source_document": "mock_cloud_kitchen_food_safety_standards_2026.pdf",
+    "question": "What is the recommended consumption window for a perishable delivered item, and what packaging requirement applies to orders above Rs. 300?",
+    "ground_truth_answer": "A recommended consumption window of not more than 2 hours from dispatch. Orders above Rs. 300 require tamper-evident seals.",
+    "correct_source_chunk": "Every delivered item must carry a label showing preparation time and a recommended consumption window of not more than 2 hours from dispatch for perishable items. Packaging materials must be food-grade certified and tamper-evident seals are mandatory for all orders above Rs. 300.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "FOOD-06",
+    "domain": "Food Safety",
+    "source_document": "mock_cloud_kitchen_food_safety_standards_2026.pdf",
+    "question": "What happens if a kitchen scores below 60% on a hygiene audit?",
+    "ground_truth_answer": "It is given 15 days to remediate, failing which its licence is suspended until re-inspection.",
+    "correct_source_chunk": "A kitchen scoring below 60% on an audit shall be given 15 days to remediate, failing which its licence shall be suspended until re-inspection.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "FOOD-07",
+    "domain": "Food Safety",
+    "source_document": "mock_cloud_kitchen_food_safety_standards_2026.pdf",
+    "question": "Within how many hours must a platform forward a food-safety complaint to the kitchen and local food safety office?",
+    "ground_truth_answer": "Within 24 hours of receipt.",
+    "correct_source_chunk": "A platform listing cloud kitchens must forward any food-safety complaint to the concerned kitchen and the local food safety office within 24 hours of receipt.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "FOOD-08",
+    "domain": "Food Safety",
+    "source_document": "mock_cloud_kitchen_food_safety_standards_2026.pdf",
+    "question": "What are the three waste/food categories referenced for labelling on delivered items?",
+    "ground_truth_answer": "Every delivered item must carry a label showing preparation time and a recommended consumption window.",
+    "correct_source_chunk": "Every delivered item must carry a label showing preparation time and a recommended consumption window of not more than 2 hours from dispatch for perishable items.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "FOOD-09",
+    "domain": "Food Safety",
+    "source_document": "mock_cloud_kitchen_food_safety_standards_2026.pdf",
+    "question": "What temperature must hot items be held above to remain safe for dispatch?",
+    "ground_truth_answer": "60\u00b0C.",
+    "correct_source_chunk": "Cooked food awaiting dispatch shall not be held at a temperature below 60\u00b0C for hot items",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "FOOD-10",
+    "domain": "Food Safety",
+    "source_document": "mock_cloud_kitchen_food_safety_standards_2026.pdf",
+    "question": "What temperature must cold items stay below to remain safe for dispatch?",
+    "ground_truth_answer": "5\u00b0C.",
+    "correct_source_chunk": "or above 5\u00b0C for cold items for more than 2 hours",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "RENT-01",
+    "domain": "Housing / Rental Tenancy",
+    "source_document": "mock_urban_short_term_rental_tenancy_rules_2026.pdf",
+    "question": "What is the maximum security deposit a landlord can collect for furnished versus unfurnished units?",
+    "ground_truth_answer": "2 months' rent for unfurnished units and 3 months' rent for furnished units.",
+    "correct_source_chunk": "A landlord shall not collect a security deposit exceeding 2 months' rent for unfurnished units or 3 months' rent for furnished units.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "RENT-02",
+    "domain": "Housing / Rental Tenancy",
+    "source_document": "mock_urban_short_term_rental_tenancy_rules_2026.pdf",
+    "question": "How quickly must a landlord address a habitability complaint, and what happens if they don't within 7 days?",
+    "ground_truth_answer": "Within 48 hours of being notified. Failure to resolve within 7 days entitles the tenant to a 5% rent abatement for each additional week of delay.",
+    "correct_source_chunk": "A landlord must address a habitability complaint (such as loss of water or electricity supply) within 48 hours of being notified. Failure to address such a complaint within 7 days entitles the tenant to a rent abatement of 5% for each additional week of delay.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "RENT-03",
+    "domain": "Housing / Rental Tenancy",
+    "source_document": "mock_urban_short_term_rental_tenancy_rules_2026.pdf",
+    "question": "What tenure range do these Rules apply to?",
+    "ground_truth_answer": "Residential rental agreements of tenure between 1 month and 11 months, facilitated through a registered platform or agent.",
+    "correct_source_chunk": "These Rules apply to residential rental agreements of tenure between 1 month and 11 months facilitated through a registered rental platform or agent within municipal limits.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "RENT-04",
+    "domain": "Housing / Rental Tenancy",
+    "source_document": "mock_urban_short_term_rental_tenancy_rules_2026.pdf",
+    "question": "Within how many days must a security deposit be refunded after the tenant vacates?",
+    "ground_truth_answer": "Within 15 days of the tenant vacating the premises, less any documented deductions.",
+    "correct_source_chunk": "The deposit shall be refunded within 15 days of the tenant vacating the premises, less any documented deductions.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "RENT-05",
+    "domain": "Housing / Rental Tenancy",
+    "source_document": "mock_urban_short_term_rental_tenancy_rules_2026.pdf",
+    "question": "How much notice is required to terminate a month-to-month tenancy?",
+    "ground_truth_answer": "At least 30 days' written notice from either party.",
+    "correct_source_chunk": "Either party must provide at least 30 days' written notice to terminate a month-to-month tenancy.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "RENT-06",
+    "domain": "Housing / Rental Tenancy",
+    "source_document": "mock_urban_short_term_rental_tenancy_rules_2026.pdf",
+    "question": "What compensation does early termination by a tenant require in a fixed-term agreement?",
+    "ground_truth_answer": "1 month's rent as compensation, unless otherwise agreed in writing.",
+    "correct_source_chunk": "For fixed-term agreements, early termination by the tenant requires 1 month's rent as compensation unless otherwise agreed in writing.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "RENT-07",
+    "domain": "Housing / Rental Tenancy",
+    "source_document": "mock_urban_short_term_rental_tenancy_rules_2026.pdf",
+    "question": "What must a rental platform verify before listing a property?",
+    "ground_truth_answer": "Landlord ownership documents.",
+    "correct_source_chunk": "A rental platform facilitating such agreements must verify landlord ownership documents before listing a property.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "RENT-08",
+    "domain": "Housing / Rental Tenancy",
+    "source_document": "mock_urban_short_term_rental_tenancy_rules_2026.pdf",
+    "question": "How are security deposits protected on platform-facilitated agreements?",
+    "ground_truth_answer": "The platform must maintain an escrow mechanism, releasing funds only on confirmation from both parties or an order of the Rent Authority.",
+    "correct_source_chunk": "A platform shall maintain an escrow mechanism for security deposits on agreements it facilitates, releasing funds only on confirmation from both parties or an order of the Rent Authority.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "RENT-09",
+    "domain": "Housing / Rental Tenancy",
+    "source_document": "mock_urban_short_term_rental_tenancy_rules_2026.pdf",
+    "question": "What is the fine for a landlord collecting a security deposit above the cap?",
+    "ground_truth_answer": "A fine of up to Rs. 10,000.",
+    "correct_source_chunk": "Collection of a security deposit above the cap under Section 2.1 shall attract a fine of up to Rs. 10,000 on the landlord.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "RENT-10",
+    "domain": "Housing / Rental Tenancy",
+    "source_document": "mock_urban_short_term_rental_tenancy_rules_2026.pdf",
+    "question": "What penalty applies to a platform that fails to maintain escrow?",
+    "ground_truth_answer": "Its registration shall be suspended for up to 90 days.",
+    "correct_source_chunk": "A platform failing to maintain escrow under Section 5.2 shall have its registration suspended for up to 90 days.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CYBER-01",
+    "domain": "Cybersecurity / Data Privacy",
+    "source_document": "mock_data_breach_notification_standards_2026.pdf",
+    "question": "Within how many hours must a Critical Severity breach be reported to the Data Protection Authority?",
+    "ground_truth_answer": "Within 6 hours of detection.",
+    "correct_source_chunk": "A Critical Severity breach must be reported to the Data Protection Authority within 6 hours of detection.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CYBER-02",
+    "domain": "Cybersecurity / Data Privacy",
+    "source_document": "mock_data_breach_notification_standards_2026.pdf",
+    "question": "What remediation must be offered to individuals affected by a Critical Severity breach involving financial data, and what is the penalty for late notification?",
+    "ground_truth_answer": "Free credit monitoring for 12 months. Failure to notify within the required timeline attracts a penalty of up to Rs. 5 crore or 2% of global annual turnover, whichever is higher.",
+    "correct_source_chunk": "An entity must offer free credit monitoring for 12 months to affected individuals in any Critical Severity breach involving financial data. Failure to notify within the timeline under Section 3.1 shall attract a penalty of up to Rs. 5 crore or 2% of global annual turnover, whichever is higher.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "CYBER-03",
+    "domain": "Cybersecurity / Data Privacy",
+    "source_document": "mock_data_breach_notification_standards_2026.pdf",
+    "question": "What size of entity do these Standards apply to?",
+    "ground_truth_answer": "Any entity processing personal data of more than 10,000 individuals, including data processors acting on their behalf.",
+    "correct_source_chunk": "These Standards apply to any entity processing personal data of more than 10,000 individuals, including data processors acting on behalf of such entities.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CYBER-04",
+    "domain": "Cybersecurity / Data Privacy",
+    "source_document": "mock_data_breach_notification_standards_2026.pdf",
+    "question": "How is a breach classified as Low Severity versus Critical Severity?",
+    "ground_truth_answer": "Low Severity: fewer than 500 individuals with no sensitive personal data. Critical Severity: financial credentials, health data, or more than 10,000 individuals affected.",
+    "correct_source_chunk": "A breach affecting fewer than 500 individuals with no sensitive personal data involved is classified as Low Severity. A breach involving financial credentials, health data, or more than 10,000 individuals is classified as Critical Severity.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "CYBER-05",
+    "domain": "Cybersecurity / Data Privacy",
+    "source_document": "mock_data_breach_notification_standards_2026.pdf",
+    "question": "What is the reporting timeline for a Moderate or Low Severity breach?",
+    "ground_truth_answer": "Within 72 hours of detection.",
+    "correct_source_chunk": "A Moderate or Low Severity breach must be reported within 72 hours of detection.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CYBER-06",
+    "domain": "Cybersecurity / Data Privacy",
+    "source_document": "mock_data_breach_notification_standards_2026.pdf",
+    "question": "Within how many days must affected individuals be notified of a Critical Severity breach?",
+    "ground_truth_answer": "Within 7 days, unless law enforcement requests a delay for investigation.",
+    "correct_source_chunk": "Affected individuals must be notified within 7 days for Critical Severity breaches unless law enforcement requests a delay for investigation.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CYBER-07",
+    "domain": "Cybersecurity / Data Privacy",
+    "source_document": "mock_data_breach_notification_standards_2026.pdf",
+    "question": "What must a breach report include?",
+    "ground_truth_answer": "The nature of the breach, categories and approximate number of individuals affected, likely consequences, and measures taken or proposed.",
+    "correct_source_chunk": "A breach report must include the nature of the breach, categories and approximate number of individuals affected, likely consequences, and measures taken or proposed to address the breach.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CYBER-08",
+    "domain": "Cybersecurity / Data Privacy",
+    "source_document": "mock_data_breach_notification_standards_2026.pdf",
+    "question": "Within how many days must a follow-up root-cause report be filed after the initial notification?",
+    "ground_truth_answer": "Within 30 days of the initial notification.",
+    "correct_source_chunk": "A follow-up report with root-cause analysis must be filed within 30 days of the initial notification.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CYBER-09",
+    "domain": "Cybersecurity / Data Privacy",
+    "source_document": "mock_data_breach_notification_standards_2026.pdf",
+    "question": "What is considered an aggravating factor in penalty determination for a breach?",
+    "ground_truth_answer": "Failure to patch a known vulnerability within 15 days of a vendor security advisory, where that vulnerability leads to a breach.",
+    "correct_source_chunk": "Failure to patch a known vulnerability within 15 days of a vendor security advisory, where that vulnerability leads to a breach, shall be treated as an aggravating factor in penalty determination.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CYBER-10",
+    "domain": "Cybersecurity / Data Privacy",
+    "source_document": "mock_data_breach_notification_standards_2026.pdf",
+    "question": "What happens on repeated non-compliance within a 3-year period?",
+    "ground_truth_answer": "It attracts twice the penalty amount for each subsequent violation.",
+    "correct_source_chunk": "Repeated non-compliance within a 3-year period shall attract twice the penalty amount for each subsequent violation.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "ENV-01",
+    "domain": "Environmental Rules",
+    "source_document": "mock_urban_green_cover_environmental_rules_2026.pdf",
+    "question": "What is the minimum girth of a tree that requires permission before felling, and how many replacement saplings must be planted per tree felled?",
+    "ground_truth_answer": "A girth of 30 cm or more measured at chest height requires permission. 3 replacement saplings must be planted per tree felled.",
+    "correct_source_chunk": "No tree with a girth of 30 cm or more measured at chest height shall be felled without prior permission from the Tree Authority. For every tree felled with permission, the applicant must plant 3 replacement saplings and maintain them for a minimum of 3 years.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "ENV-02",
+    "domain": "Environmental Rules",
+    "source_document": "mock_urban_green_cover_environmental_rules_2026.pdf",
+    "question": "What happens if no decision on an environmental clearance application is communicated within 90 days?",
+    "ground_truth_answer": "The clearance is deemed granted, subject to standard conditions.",
+    "correct_source_chunk": "If no decision is communicated within 90 days, the clearance shall be deemed granted subject to standard conditions.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "ENV-03",
+    "domain": "Environmental Rules",
+    "source_document": "mock_urban_green_cover_environmental_rules_2026.pdf",
+    "question": "What built-up area threshold triggers applicability of these Rules?",
+    "ground_truth_answer": "Any construction project with a built-up area exceeding 500 square metres within municipal limits.",
+    "correct_source_chunk": "These Rules apply to any construction project with a built-up area exceeding 500 square metres within municipal limits.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "ENV-04",
+    "domain": "Environmental Rules",
+    "source_document": "mock_urban_green_cover_environmental_rules_2026.pdf",
+    "question": "What percentage of plot area must be reserved as green cover, and up to what percentage can be met via vertical gardens?",
+    "ground_truth_answer": "At least 15% of the plot area must be green cover, and up to 40% of that requirement can be met through vertical gardens or terrace plantation.",
+    "correct_source_chunk": "Every approved construction project above the threshold in Section 1.1 must reserve at least 15% of the plot area as green cover. Green cover requirements may be met up to 40% through vertical gardens or terrace plantation where ground-level space is insufficient.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "ENV-05",
+    "domain": "Environmental Rules",
+    "source_document": "mock_urban_green_cover_environmental_rules_2026.pdf",
+    "question": "Within how many days must an environmental clearance application normally be processed?",
+    "ground_truth_answer": "Within 60 days of submission.",
+    "correct_source_chunk": "An application for environmental clearance must be processed within 60 days of submission.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "ENV-06",
+    "domain": "Environmental Rules",
+    "source_document": "mock_urban_green_cover_environmental_rules_2026.pdf",
+    "question": "At what site size must anti-smog guns or dust-suppression systems be installed?",
+    "ground_truth_answer": "If the site exceeds 2,000 square metres.",
+    "correct_source_chunk": "Construction sites must install anti-smog guns or equivalent dust-suppression systems if the site exceeds 2,000 square metres.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "ENV-07",
+    "domain": "Environmental Rules",
+    "source_document": "mock_urban_green_cover_environmental_rules_2026.pdf",
+    "question": "What happens to a site found operating without dust control during a declared high-pollution period?",
+    "ground_truth_answer": "It faces work stoppage for up to 7 days.",
+    "correct_source_chunk": "Any site found operating without dust control measures during a declared high-pollution period shall face work stoppage for up to 7 days.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "ENV-08",
+    "domain": "Environmental Rules",
+    "source_document": "mock_urban_green_cover_environmental_rules_2026.pdf",
+    "question": "What is the fine for unauthorised tree felling?",
+    "ground_truth_answer": "Rs. 20,000 per tree, in addition to the replacement planting obligation.",
+    "correct_source_chunk": "Unauthorised felling under Section 2.1 shall attract a fine of Rs. 20,000 per tree in addition to the replacement planting obligation.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "ENV-09",
+    "domain": "Environmental Rules",
+    "source_document": "mock_urban_green_cover_environmental_rules_2026.pdf",
+    "question": "What happens if a project fails to maintain its green cover ratio at the time of occupancy certificate inspection?",
+    "ground_truth_answer": "The occupancy certificate is withheld until compliance.",
+    "correct_source_chunk": "Failure to maintain the green cover ratio under Section 3.1 at the time of occupancy certificate inspection shall result in withholding of the certificate until compliance.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "ENV-10",
+    "domain": "Environmental Rules",
+    "source_document": "mock_urban_green_cover_environmental_rules_2026.pdf",
+    "question": "For how long must replacement saplings be maintained after a permitted tree felling?",
+    "ground_truth_answer": "A minimum of 3 years.",
+    "correct_source_chunk": "For every tree felled with permission, the applicant must plant 3 replacement saplings and maintain them for a minimum of 3 years.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "WASTE-01",
+    "domain": "Waste Management",
+    "source_document": "mock_residential_waste_segregation_rules_2026.pdf",
+    "question": "At what daily waste generation threshold is an establishment classified as a Bulk Waste Generator, and what must it do on-site?",
+    "ground_truth_answer": "More than 100 kg of waste per day. It must process wet waste on-site through composting or biomethanation.",
+    "correct_source_chunk": "Any establishment generating more than 100 kg of waste per day is classified as a Bulk Waste Generator and must process wet waste on-site through composting or biomethanation.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "WASTE-02",
+    "domain": "Waste Management",
+    "source_document": "mock_residential_waste_segregation_rules_2026.pdf",
+    "question": "What is the fine for a household mixing wet and dry waste on a second detection within 90 days?",
+    "ground_truth_answer": "Rs. 200, and collection may be refused until segregation resumes.",
+    "correct_source_chunk": "A second detection within 90 days shall attract a fine of Rs. 200, and collection may be refused until segregation resumes.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "WASTE-03",
+    "domain": "Waste Management",
+    "source_document": "mock_residential_waste_segregation_rules_2026.pdf",
+    "question": "What are the three waste categories every household must segregate into?",
+    "ground_truth_answer": "Wet, dry, and hazardous categories.",
+    "correct_source_chunk": "Every household and commercial establishment shall segregate waste into wet, dry, and hazardous categories at source.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "WASTE-04",
+    "domain": "Waste Management",
+    "source_document": "mock_residential_waste_segregation_rules_2026.pdf",
+    "question": "What items are classified as hazardous waste under these Rules?",
+    "ground_truth_answer": "Batteries, expired medicines, and electronic waste, which must never be mixed with wet or dry waste.",
+    "correct_source_chunk": "Hazardous waste includes batteries, expired medicines, and electronic waste, which shall never be mixed with wet or dry waste.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "WASTE-05",
+    "domain": "Waste Management",
+    "source_document": "mock_residential_waste_segregation_rules_2026.pdf",
+    "question": "How often is wet waste collected versus dry waste?",
+    "ground_truth_answer": "Wet waste is collected daily, while dry waste is collected at least twice a week.",
+    "correct_source_chunk": "Wet waste shall be collected daily, while dry waste shall be collected at least twice a week.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "WASTE-06",
+    "domain": "Waste Management",
+    "source_document": "mock_residential_waste_segregation_rules_2026.pdf",
+    "question": "How often are hazardous waste collection drives held?",
+    "ground_truth_answer": "At least once a month in each ward.",
+    "correct_source_chunk": "Hazardous waste shall be collected only through designated collection drives held at least once a month in each ward.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "WASTE-07",
+    "domain": "Waste Management",
+    "source_document": "mock_residential_waste_segregation_rules_2026.pdf",
+    "question": "How often must a Bulk Waste Generator submit a compliance report to the municipal authority?",
+    "ground_truth_answer": "Every 6 months.",
+    "correct_source_chunk": "A Bulk Waste Generator must submit a waste management compliance report to the municipal authority every 6 months.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "WASTE-08",
+    "domain": "Waste Management",
+    "source_document": "mock_residential_waste_segregation_rules_2026.pdf",
+    "question": "What happens on a household's first detection of mixing wet and dry waste?",
+    "ground_truth_answer": "It receives a written warning.",
+    "correct_source_chunk": "A household found mixing wet and dry waste shall receive a written warning on first detection.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "WASTE-09",
+    "domain": "Waste Management",
+    "source_document": "mock_residential_waste_segregation_rules_2026.pdf",
+    "question": "What is the fine for a Bulk Waste Generator failing to process wet waste on-site?",
+    "ground_truth_answer": "Rs. 5,000 per week of non-compliance.",
+    "correct_source_chunk": "A Bulk Waste Generator failing to process wet waste on-site under Section 3.1 shall be fined Rs. 5,000 per week of non-compliance.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "WASTE-10",
+    "domain": "Waste Management",
+    "source_document": "mock_residential_waste_segregation_rules_2026.pdf",
+    "question": "What happens if a Bulk Waste Generator fails to submit its compliance report for two consecutive cycles?",
+    "ground_truth_answer": "Its municipal waste collection services are suspended.",
+    "correct_source_chunk": "Failure to submit the compliance report under Section 3.2 for two consecutive cycles shall result in suspension of municipal waste collection services to that establishment.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "POLL-01",
+    "domain": "Pollution Control",
+    "source_document": "mock_urban_industrial_emissions_control_standards_2026.pdf",
+    "question": "What is the particulate matter emission limit per stack, and what is the daily fine for exceeding it after the first inspection?",
+    "ground_truth_answer": "150 mg per normal cubic metre. Exceeding it attracts a fine of Rs. 25,000 per day of continued violation after the first inspection.",
+    "correct_source_chunk": "Particulate matter emissions from any stack shall not exceed 150 mg per normal cubic metre. Exceeding the particulate matter limit under Section 2.1 shall attract a fine of Rs. 25,000 per day of continued violation after the first inspection.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "POLL-02",
+    "domain": "Pollution Control",
+    "source_document": "mock_urban_industrial_emissions_control_standards_2026.pdf",
+    "question": "How often must a Red Category unit undergo a third-party environmental audit?",
+    "ground_truth_answer": "Once every 2 years.",
+    "correct_source_chunk": "A Red Category unit must undergo a third-party environmental audit once every 2 years.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "POLL-03",
+    "domain": "Pollution Control",
+    "source_document": "mock_urban_industrial_emissions_control_standards_2026.pdf",
+    "question": "What proximity to a residential zone triggers applicability of these Standards?",
+    "ground_truth_answer": "Any manufacturing unit operating within 5 km of a declared residential zone.",
+    "correct_source_chunk": "These Standards apply to any manufacturing unit operating within 5 km of a declared residential zone.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "POLL-04",
+    "domain": "Pollution Control",
+    "source_document": "mock_urban_industrial_emissions_control_standards_2026.pdf",
+    "question": "At what sulphur dioxide level must a unit install a flue gas desulphurisation system, and within what timeframe?",
+    "ground_truth_answer": "Above 40 ppm at the stack outlet, exceeded in two consecutive quarterly tests, requiring installation within 12 months.",
+    "correct_source_chunk": "Units emitting sulphur dioxide above 40 ppm at the stack outlet must install a flue gas desulphurisation system within 12 months of the limit being exceeded in two consecutive quarterly tests.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "POLL-05",
+    "domain": "Pollution Control",
+    "source_document": "mock_urban_industrial_emissions_control_standards_2026.pdf",
+    "question": "At what production capacity must a unit install a Continuous Emission Monitoring System?",
+    "ground_truth_answer": "An annual production capacity above 10,000 tonnes.",
+    "correct_source_chunk": "A unit with an annual production capacity above 10,000 tonnes must install a Continuous Emission Monitoring System connected to the Board's central server.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "POLL-06",
+    "domain": "Pollution Control",
+    "source_document": "mock_urban_industrial_emissions_control_standards_2026.pdf",
+    "question": "How long must emissions monitoring data be retained?",
+    "ground_truth_answer": "A minimum of 5 years, and made available to inspecting officers on demand.",
+    "correct_source_chunk": "Monitoring data must be retained for a minimum of 5 years and made available to inspecting officers on demand.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "POLL-07",
+    "domain": "Pollution Control",
+    "source_document": "mock_urban_industrial_emissions_control_standards_2026.pdf",
+    "question": "What happens if a Red Category unit violates emission limits twice within 3 years?",
+    "ground_truth_answer": "Its consent-to-operate is suspended for a minimum of 30 days.",
+    "correct_source_chunk": "A Red Category unit found in violation of Section 2 twice within a 3-year period shall have its consent-to-operate suspended for a minimum of 30 days.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "POLL-08",
+    "domain": "Pollution Control",
+    "source_document": "mock_urban_industrial_emissions_control_standards_2026.pdf",
+    "question": "What is the penalty for tampering with or disconnecting a Continuous Emission Monitoring System?",
+    "ground_truth_answer": "A fine of up to Rs. 5,00,000 and possible criminal referral.",
+    "correct_source_chunk": "Tampering with or disconnecting a Continuous Emission Monitoring System shall attract a fine of up to Rs. 5,00,000 and may result in criminal referral.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "POLL-09",
+    "domain": "Pollution Control",
+    "source_document": "mock_urban_industrial_emissions_control_standards_2026.pdf",
+    "question": "What additional conditions apply to Red Category units?",
+    "ground_truth_answer": "They are subject to additional conditions under Section 4, including mandatory audits and stricter suspension rules.",
+    "correct_source_chunk": "Units classified as Red Category under the State Pollution Control Board's classification are subject to additional conditions under Section 4.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "POLL-10",
+    "domain": "Pollution Control",
+    "source_document": "mock_urban_industrial_emissions_control_standards_2026.pdf",
+    "question": "Where must the Continuous Emission Monitoring System be connected?",
+    "ground_truth_answer": "To the Board's central server.",
+    "correct_source_chunk": "A unit with an annual production capacity above 10,000 tonnes must install a Continuous Emission Monitoring System connected to the Board's central server.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CONS-01",
+    "domain": "Consumer Protection",
+    "source_document": "mock_ecommerce_consumer_protection_standards_2026.pdf",
+    "question": "Within how many days can a consumer return a product without giving a reason, and within how many days must a refund be processed after the item is received?",
+    "ground_truth_answer": "Within 7 days of delivery. A refund must be processed within 5 working days of the returned item being received by the seller.",
+    "correct_source_chunk": "A consumer may return a product within 7 days of delivery without providing a reason, except for perishable goods and personalised items. A refund initiated by the consumer must be processed within 5 working days of the returned item being received by the seller.",
+    "claim_type": "multi-claim"
+  },
+  {
+    "id": "CONS-02",
+    "domain": "Consumer Protection",
+    "source_document": "mock_ecommerce_consumer_protection_standards_2026.pdf",
+    "question": "What is the penalty range for using dark patterns like hiding subscription cancellation options?",
+    "ground_truth_answer": "Up to Rs. 10,00,000 for the first instance and up to Rs. 50,00,000 for repeat violations.",
+    "correct_source_chunk": "Violation of Section 5 shall attract a fine of up to Rs. 10,00,000 for the first instance and up to Rs. 50,00,000 for repeat violations.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CONS-03",
+    "domain": "Consumer Protection",
+    "source_document": "mock_ecommerce_consumer_protection_standards_2026.pdf",
+    "question": "What size of e-commerce entity do these Standards apply to?",
+    "ground_truth_answer": "Entities with more than 10,000 registered users or annual sales above Rs. 1 crore within the State.",
+    "correct_source_chunk": "These Standards apply to any e-commerce entity with more than 10,000 registered users or annual sales above Rs. 1 crore within the State.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CONS-04",
+    "domain": "Consumer Protection",
+    "source_document": "mock_ecommerce_consumer_protection_standards_2026.pdf",
+    "question": "What information must an e-commerce entity display for every listed product?",
+    "ground_truth_answer": "Country of origin, total price inclusive of all charges, and seller identity.",
+    "correct_source_chunk": "An e-commerce entity must display the country of origin, total price inclusive of all charges, and seller identity for every listed product.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CONS-05",
+    "domain": "Consumer Protection",
+    "source_document": "mock_ecommerce_consumer_protection_standards_2026.pdf",
+    "question": "What must a promotional countdown timer's price increase actually reflect?",
+    "ground_truth_answer": "An actual, verifiable price change, not a simulated scarcity indicator.",
+    "correct_source_chunk": "Any price increase triggered by a promotional countdown timer must reflect an actual, verifiable price change and not a simulated scarcity indicator.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CONS-06",
+    "domain": "Consumer Protection",
+    "source_document": "mock_ecommerce_consumer_protection_standards_2026.pdf",
+    "question": "How quickly must a Grievance Officer acknowledge and resolve a complaint?",
+    "ground_truth_answer": "Acknowledge within 48 hours and resolve within 30 days.",
+    "correct_source_chunk": "An e-commerce entity must appoint a Grievance Officer who acknowledges a complaint within 48 hours and resolves it within 30 days.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CONS-07",
+    "domain": "Consumer Protection",
+    "source_document": "mock_ecommerce_consumer_protection_standards_2026.pdf",
+    "question": "How long does a consumer have to approach the Consumer Disputes Redressal Commission if dissatisfied?",
+    "ground_truth_answer": "Within 2 years of the cause of action.",
+    "correct_source_chunk": "A consumer dissatisfied with the resolution may approach the Consumer Disputes Redressal Commission within 2 years of the cause of action.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CONS-08",
+    "domain": "Consumer Protection",
+    "source_document": "mock_ecommerce_consumer_protection_standards_2026.pdf",
+    "question": "How many navigation steps beyond the account page can a cancellation option be hidden?",
+    "ground_truth_answer": "It cannot be hidden beyond 2 navigation steps from the account page.",
+    "correct_source_chunk": "including hiding the cancellation option beyond 2 navigation steps from the account page",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CONS-09",
+    "domain": "Consumer Protection",
+    "source_document": "mock_ecommerce_consumer_protection_standards_2026.pdf",
+    "question": "Are pre-ticked consent boxes for paid add-ons allowed at checkout?",
+    "ground_truth_answer": "No, they are prohibited at checkout.",
+    "correct_source_chunk": "Pre-ticked consent boxes for paid add-ons are prohibited at checkout.",
+    "claim_type": "single-claim"
+  },
+  {
+    "id": "CONS-10",
+    "domain": "Consumer Protection",
+    "source_document": "mock_ecommerce_consumer_protection_standards_2026.pdf",
+    "question": "What compensation applies if the refund timeline under Section 2.2 is missed?",
+    "ground_truth_answer": "The consumer is entitled to a further 2% of the refund amount per week of delay, payable by the seller.",
+    "correct_source_chunk": "Failure to meet the refund timeline under Section 2.2 shall entitle the consumer to a further 2% of the refund amount per week of delay, payable by the seller.",
+    "claim_type": "single-claim"
+  }
+]

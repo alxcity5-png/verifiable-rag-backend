@@ -32,7 +32,7 @@ async def upload_document(file: UploadFile = File(...)):
 
     chunks = split_text_into_chunks(extracted_text)
 
-    stored_chunks = store_chunks(chunks)
+    stored_chunks = store_chunks(chunks, source=file.filename)
 
     return {
         "message": "Document stored successfully",

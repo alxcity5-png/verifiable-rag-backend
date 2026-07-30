@@ -1,0 +1,13 @@
+#	Domain	Document
+1	Campus IT / Edge Computing Policy	Campus Device Repurposing & Edge-Node Registration Regulations, 2026
+2	Healthcare / Telemedicine	Model Telemedicine Practice Guidelines
+3	RTI / Government Transparency	RTI Act Structure Reference Summary
+4	Labor / Gig Economy	Platform-Based Gig Worker Wage Protection Code, 2026
+5	Fintech / Digital Lending	Digital Lending Consumer Safeguard Guidelines, 2026
+6	Food Safety	Cloud Kitchen and Delivery-Only Food Safety Standards, 2026
+7	Housing / Rental Tenancy	Urban Short-Term Rental and Tenancy Facilitation Rules, 2026
+8	Cybersecurity / Data Privacy	Data Breach Notification and Incident Response Standards, 2026
+9	Environmental Rules	Urban Green Cover and Construction Environmental Rules
+10	Waste Management	Residential and Commercial Waste Segregation Rules
+11	Pollution Control	Urban Industrial Emissions Control Standards
+12	Consumer Protection	E-Commerce Consumer Protection Standards

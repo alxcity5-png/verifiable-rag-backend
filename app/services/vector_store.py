@@ -20,26 +20,37 @@ embedding_model = SentenceTransformer(
 )
 
 
-def store_chunks(chunks: list[str]):
+def store_chunks(chunks: list[str], source: str = "unknown"):
     """
-    Generate embeddings and store chunks in ChromaDB.
+    Generate embeddings and store chunks in ChromaDB, tagged with the
+    source document filename so retrieved chunks can be traced back
+    to the PDF they came from.
     """
 
     embeddings = embedding_model.encode(chunks).tolist()
 
+    # Use a hash of the source name so IDs stay unique across multiple
+    # uploads instead of colliding on chunk_0, chunk_1, etc.
+    existing_count = collection.count()
+
     ids = [
-        f"chunk_{i}"
+        f"{source}_chunk_{existing_count + i}"
+        for i in range(len(chunks))
+    ]
+
+    metadatas = [
+        {"source": source, "chunk_index": i}
         for i in range(len(chunks))
     ]
 
     collection.add(
         documents=chunks,
         embeddings=embeddings,
-        ids=ids
+        ids=ids,
+        metadatas=metadatas
     )
 
     return len(chunks)
-
 
 def get_collection_count():
     """
