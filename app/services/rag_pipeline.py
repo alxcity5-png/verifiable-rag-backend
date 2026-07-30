@@ -2,6 +2,7 @@ from app.services.retriever import retrieve_chunks
 from app.services.llm_service import generate_answer
 from app.services.claim_extractor import extract_claims
 from app.services.claim_verifier import verify_claim
+from app.services.faithfulness import calculate_faithfulness
 
 
 def clean_text(text: str) -> str:
@@ -49,10 +50,15 @@ def answer_question(question: str, top_k: int = 3):
         for claim in claims
     ]
 
+    faithfulness_score = calculate_faithfulness(
+        verification_results
+    )
+
     return {
         "question": question,
         "answer": answer,
         "claims": claims,
         "verification": verification_results,
+        "faithfulness_score": faithfulness_score,
         "sources": chunks
     }
