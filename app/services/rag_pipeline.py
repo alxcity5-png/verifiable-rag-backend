@@ -1,5 +1,6 @@
 from app.services.retriever import retrieve_chunks
 from app.services.llm_service import generate_answer
+from app.services.claim_extractor import extract_claims
 
 
 def clean_text(text: str) -> str:
@@ -29,8 +30,11 @@ def answer_question(question: str, top_k: int = 3):
         question=question
     )
 
+    claims = extract_claims(answer)
+
     return {
         "question": question,
         "answer": answer,
+        "claims": claims,
         "sources": chunks
     }
