@@ -49,5 +49,5 @@ def retrieve_chunks(question: str, top_k: int = 3):
             }
         )
 
-
+    
     return retrieved_results

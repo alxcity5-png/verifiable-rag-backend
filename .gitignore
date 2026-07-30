@@ -4,3 +4,11 @@ venv/
 uploads/
 chroma_db/
 .env
+.env
+__pycache__/
+*.pyc
+chroma_db/
+reports/
+testing/reports/
+testing/PDF/_ingested/
+testing/PDF/processed_files.json
