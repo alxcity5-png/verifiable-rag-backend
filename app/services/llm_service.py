@@ -2,6 +2,7 @@ from groq import Groq
 
 from app.config import GROQ_API_KEY, GROQ_MODEL
 
+
 client = Groq(api_key=GROQ_API_KEY)
 
 
@@ -44,6 +45,30 @@ Do not add extra information.
             },
         ],
         stop=["\n\n"],
+    )
+
+    return response.choices[0].message.content.strip()
+
+
+def generate_text(prompt: str):
+    response = client.chat.completions.create(
+        model=GROQ_MODEL,
+        temperature=0,
+        top_p=0.1,
+        max_tokens=256,
+        messages=[
+            {
+                "role": "system",
+                "content": (
+                    "You are an information extraction assistant. "
+                    "Follow the user's instructions exactly."
+                ),
+            },
+            {
+                "role": "user",
+                "content": prompt,
+            },
+        ],
     )
 
     return response.choices[0].message.content.strip()
