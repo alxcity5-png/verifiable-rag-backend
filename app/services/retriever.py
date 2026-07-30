@@ -21,7 +21,7 @@ collection = client.get_collection(
 
 def retrieve_chunks(question: str, top_k: int = 3):
     """
-    Retrieve relevant document chunks for a question.
+    Retrieve relevant document chunks with metadata and scores.
     """
 
     # Create embedding for question
@@ -37,7 +37,17 @@ def retrieve_chunks(question: str, top_k: int = 3):
     )
 
 
-    retrieved_chunks = results["documents"][0]
+    retrieved_results = []
 
 
-    return retrieved_chunks
+    for i in range(len(results["documents"][0])):
+        retrieved_results.append(
+            {
+                "chunk": results["documents"][0][i],
+                "metadata": results["metadatas"][0][i],
+                "distance": results["distances"][0][i]
+            }
+        )
+
+
+    return retrieved_results
