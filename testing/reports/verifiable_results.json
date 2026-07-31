@@ -1,0 +1,111 @@
+[
+  {
+    "id": "CAMPUS-01",
+    "domain": "Campus IT / Edge Computing Policy",
+    "question": "How many edge nodes can be operated without registration, and how many working days before deployment must a registration application be submitted?",
+    "answer": null,
+    "shown": false,
+    "is_correct": false,
+    "faithfulness_score": 0.5,
+    "claims": [
+      "Two edge nodes can be operated without registration.",
+      "A registration application must be submitted at least seven working days before deployment."
+    ],
+    "verification": [
+      {
+        "claim": "Two edge nodes can be operated without registration.",
+        "supported": false,
+        "evidence": null
+      },
+      {
+        "claim": "A registration application must be submitted at least seven working days before deployment.",
+        "supported": true,
+        "evidence": "An application for registration shall be submitted in Form ER-1 at least seven working days before deployment and shall be either approved or rejected within fifteen working days of submission."
+      }
+    ],
+    "recall_at_k": true,
+    "latency_ms": 3069.6
+  },
+  {
+    "id": "CAMPUS-02",
+    "domain": "Campus IT / Edge Computing Policy",
+    "question": "What is the fine for operating a sensitive workload without Tier-2 registration?",
+    "answer": "A fine not exceeding Rs. 2,000.",
+    "shown": true,
+    "is_correct": true,
+    "faithfulness_score": 1.0,
+    "claims": [
+      "The fine for operating a sensitive workload without Tier-2 registration is not exceeding Rs. 2,000."
+    ],
+    "verification": [
+      {
+        "claim": "The fine for operating a sensitive workload without Tier-2 registration is not exceeding Rs. 2,000.",
+        "supported": true,
+        "evidence": "(2) Operation of a sensitive workload without Tier-2 registration shall attract immediate disconnection and a fine not exceeding Rs. 2,000, to be credited to the Student Welfare Fund."
+      }
+    ],
+    "recall_at_k": true,
+    "latency_ms": 2613.8
+  },
+  {
+    "id": "CAMPUS-03",
+    "domain": "Campus IT / Edge Computing Policy",
+    "question": "When do these Regulations come into force?",
+    "answer": null,
+    "shown": false,
+    "is_correct": false,
+    "faithfulness_score": 0.0,
+    "claims": [],
+    "verification": [],
+    "recall_at_k": false,
+    "latency_ms": 2698.5
+  },
+  {
+    "id": "CAMPUS-04",
+    "domain": "Campus IT / Edge Computing Policy",
+    "question": "Who is the registering authority under these Regulations?",
+    "answer": null,
+    "shown": false,
+    "is_correct": false,
+    "faithfulness_score": 0.0,
+    "claims": [
+      "The Campus IT Security Office is the registering authority under these Regulations."
+    ],
+    "verification": [
+      {
+        "claim": "The Campus IT Security Office is the registering authority under these Regulations.",
+        "supported": false,
+        "evidence": null
+      }
+    ],
+    "recall_at_k": true,
+    "latency_ms": 2649.7
+  },
+  {
+    "id": "CAMPUS-05",
+    "domain": "Campus IT / Edge Computing Policy",
+    "question": "What network can an edge node be connected to, and what is it explicitly barred from?",
+    "answer": "An edge node shall be connected to the designated IoT-VLAN. \nAn edge node shall not be bridged to the administrative or examination network.",
+    "shown": true,
+    "is_correct": true,
+    "faithfulness_score": 1.0,
+    "claims": [
+      "An edge node shall be connected to the designated IoT-VLAN.",
+      "An edge node shall not be connected to the administrative or examination network."
+    ],
+    "verification": [
+      {
+        "claim": "An edge node shall be connected to the designated IoT-VLAN.",
+        "supported": true,
+        "evidence": "Every edge node shall be connected only to the designated IoT-VLAN and shall not be bridged to the administrative or examination network under any circumstance."
+      },
+      {
+        "claim": "An edge node shall not be connected to the administrative or examination network.",
+        "supported": true,
+        "evidence": "Every edge node shall be connected only to the designated IoT-VLAN and shall not be bridged to the administrative or examination network under any circumstance."
+      }
+    ],
+    "recall_at_k": true,
+    "latency_ms": 2736.8
+  }
+]

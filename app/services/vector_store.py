@@ -40,3 +40,11 @@ def get_collection_count():
     """
 
     return collection.count()
+def clear_collection():
+    """
+    Remove all documents from the Chroma collection.
+    """
+    ids = collection.get()["ids"]
+
+    if ids:
+        collection.delete(ids=ids)

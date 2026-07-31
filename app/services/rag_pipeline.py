@@ -16,11 +16,16 @@ def clean_text(text: str) -> str:
     )
 
 
-def answer_question(question: str, top_k: int = 3):
+def answer_question(
+    question: str,
+    document_name: str,
+    top_k: int = 3
+):
     chunks = retrieve_chunks(
-        question=question,
-        top_k=top_k
-    )
+    question=question,
+    document_name=document_name,
+    top_k=top_k
+)
 
     context = "\n\n".join(
         clean_text(chunk["chunk"])
@@ -43,12 +48,12 @@ def answer_question(question: str, top_k: int = 3):
     ]
 
     verification_results = [
-        verify_claim(
-            claim=claim,
-            evidence_chunks=evidence_chunks
-        )
-        for claim in claims
-    ]
+    verify_claim(
+        claim=claim,
+        evidence_chunks=evidence_chunks
+    )
+    for claim in claims[:3]
+]
 
     faithfulness_score = calculate_faithfulness(
         verification_results

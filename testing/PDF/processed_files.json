@@ -1,0 +1,50 @@
+{
+  "a474049ade4485b23ceb845714db2ae5dfa282c0402d86964f1d1c4d14c6d260": {
+    "original_name": "mock_campus_device_regulations_2026.pdf",
+    "ingested_at": "2026-07-30T18:54:53"
+  },
+  "c19cd5dec1ff1791a4fb53e3b293355b6e44576f3b8e465ba7e212fb5af7b0fb": {
+    "original_name": "mock_cloud_kitchen_food_safety_standards_2026.pdf",
+    "ingested_at": "2026-07-30T18:54:59"
+  },
+  "211fb425c2a575ddef37cbcf33cd495f3725ab24376f9cfecf8094fe04dc62c2": {
+    "original_name": "mock_data_breach_notification_standards_2026.pdf",
+    "ingested_at": "2026-07-30T18:55:06"
+  },
+  "cff662a494e91895a2075ebe3f0da3f628987585edcd10948d35bc5f7172f32d": {
+    "original_name": "mock_digital_lending_consumer_safeguards_2026.pdf",
+    "ingested_at": "2026-07-30T18:55:12"
+  },
+  "5356c70bc9dffcd6db27b4c820772e038a05b98af5d1c5aa70306bf7f7ff2a0d": {
+    "original_name": "mock_ecommerce_consumer_protection_standards_2026.pdf",
+    "ingested_at": "2026-07-30T18:55:19"
+  },
+  "f743e62bcc7efd0cade4a75ea46f21625b92dce15c25f2e079f17630682a602c": {
+    "original_name": "mock_gig_worker_wage_protection_code_2026.pdf",
+    "ingested_at": "2026-07-30T18:55:26"
+  },
+  "17a113f502d2f2d0cf401db30f8a1244d27be3420d0ad95f6e329851c59b3f8e": {
+    "original_name": "mock_residential_waste_segregation_rules_2026.pdf",
+    "ingested_at": "2026-07-30T18:55:32"
+  },
+  "14238ca69f718c9c6594d999099e2a9eb7b7695d545571ef31616c3bfad9c33b": {
+    "original_name": "mock_telemedicine_practice_guidelines.pdf",
+    "ingested_at": "2026-07-30T18:55:38"
+  },
+  "b99a578250d6bb7ca3694506d15ae57e5486a3c1f0104feef9c3ce403bf8fe53": {
+    "original_name": "mock_urban_green_cover_environmental_rules_2026.pdf",
+    "ingested_at": "2026-07-30T18:55:45"
+  },
+  "f145292b22d763ae4dde61eb9d28d84ce71bc81aefc046a4b871117b85d34e9d": {
+    "original_name": "mock_urban_industrial_emissions_control_standards_2026.pdf",
+    "ingested_at": "2026-07-30T18:55:51"
+  },
+  "04705f538d5d9a5598ee7db54ba0b046ba577af3fca0529d04ff437b13b55b74": {
+    "original_name": "mock_urban_short_term_rental_tenancy_rules_2026.pdf",
+    "ingested_at": "2026-07-30T18:55:57"
+  },
+  "34a84e56bb1f28348e61666c3b647211e0628c7d7c75bd5892c848f5ccb318c4": {
+    "original_name": "reference_rti_act_structure_summary.pdf",
+    "ingested_at": "2026-07-30T18:56:03"
+  }
+}

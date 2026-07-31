@@ -1,0 +1,136 @@
+[
+  {
+    "id": "CAMPUS-01",
+    "domain": "Campus IT / Edge Computing Policy",
+    "question": "How many edge nodes can be operated without registration, and how many working days before deployment must a registration application be submitted?",
+    "ground_truth_answer": "Up to two edge nodes may be operated without registration. An application must be submitted at least seven working days before deployment.",
+    "model_answer": "No person or club shall operate more than two edge nodes on the campus network without prior registration with the registering authority. \nAn application for registration shall be submitted in Form ER-1 at least seven working days before deployment.",
+    "claims": [
+      "Two edge nodes can be operated without registration.",
+      "A registration application must be submitted at least seven working days before deployment."
+    ],
+    "verification": [
+      {
+        "claim": "Two edge nodes can be operated without registration.",
+        "supported": false,
+        "evidence": null
+      },
+      {
+        "claim": "A registration application must be submitted at least seven working days before deployment.",
+        "supported": true,
+        "evidence": "An application for registration shall be submitted in Form ER-1 at least seven working days before deployment and shall be either approved or rejected within fifteen working days of submission."
+      }
+    ],
+    "faithfulness_score": 0.5,
+    "recall_at_k": true,
+    "latency_ms": 3069.6,
+    "naive_is_correct": true,
+    "naive_text_similarity": 0.642,
+    "naive_number_overlap": 0.642,
+    "verifiable_shown": false,
+    "verifiable_is_correct": false,
+    "error": null
+  },
+  {
+    "id": "CAMPUS-02",
+    "domain": "Campus IT / Edge Computing Policy",
+    "question": "What is the fine for operating a sensitive workload without Tier-2 registration?",
+    "ground_truth_answer": "A fine not exceeding Rs. 2,000, credited to the Student Welfare Fund, along with immediate disconnection.",
+    "model_answer": "A fine not exceeding Rs. 2,000.",
+    "claims": [
+      "The fine for operating a sensitive workload without Tier-2 registration is not exceeding Rs. 2,000."
+    ],
+    "verification": [
+      {
+        "claim": "The fine for operating a sensitive workload without Tier-2 registration is not exceeding Rs. 2,000.",
+        "supported": true,
+        "evidence": "(2) Operation of a sensitive workload without Tier-2 registration shall attract immediate disconnection and a fine not exceeding Rs. 2,000, to be credited to the Student Welfare Fund."
+      }
+    ],
+    "faithfulness_score": 1.0,
+    "recall_at_k": true,
+    "latency_ms": 2613.8,
+    "naive_is_correct": true,
+    "naive_text_similarity": 0.463,
+    "naive_number_overlap": 1.0,
+    "verifiable_shown": true,
+    "verifiable_is_correct": true,
+    "error": null
+  },
+  {
+    "id": "CAMPUS-03",
+    "domain": "Campus IT / Edge Computing Policy",
+    "question": "When do these Regulations come into force?",
+    "ground_truth_answer": "They come into force on 1st August 2026.",
+    "model_answer": "I could not find this information in the document.",
+    "claims": [],
+    "verification": [],
+    "faithfulness_score": 0.0,
+    "recall_at_k": false,
+    "latency_ms": 2698.5,
+    "naive_is_correct": false,
+    "naive_text_similarity": 0.0,
+    "naive_number_overlap": 0.0,
+    "verifiable_shown": false,
+    "verifiable_is_correct": false,
+    "error": null
+  },
+  {
+    "id": "CAMPUS-04",
+    "domain": "Campus IT / Edge Computing Policy",
+    "question": "Who is the registering authority under these Regulations?",
+    "ground_truth_answer": "The Campus IT Security Office is the registering authority.",
+    "model_answer": "The Campus IT Security Office.",
+    "claims": [
+      "The Campus IT Security Office is the registering authority under these Regulations."
+    ],
+    "verification": [
+      {
+        "claim": "The Campus IT Security Office is the registering authority under these Regulations.",
+        "supported": false,
+        "evidence": null
+      }
+    ],
+    "faithfulness_score": 0.0,
+    "recall_at_k": true,
+    "latency_ms": 2649.7,
+    "naive_is_correct": true,
+    "naive_text_similarity": 0.674,
+    "naive_number_overlap": 0.674,
+    "verifiable_shown": false,
+    "verifiable_is_correct": false,
+    "error": null
+  },
+  {
+    "id": "CAMPUS-05",
+    "domain": "Campus IT / Edge Computing Policy",
+    "question": "What network can an edge node be connected to, and what is it explicitly barred from?",
+    "ground_truth_answer": "An edge node may only connect to the designated IoT-VLAN, and must never be bridged to the administrative or examination network.",
+    "model_answer": "An edge node shall be connected to the designated IoT-VLAN. \nAn edge node shall not be bridged to the administrative or examination network.",
+    "claims": [
+      "An edge node shall be connected to the designated IoT-VLAN.",
+      "An edge node shall not be connected to the administrative or examination network."
+    ],
+    "verification": [
+      {
+        "claim": "An edge node shall be connected to the designated IoT-VLAN.",
+        "supported": true,
+        "evidence": "Every edge node shall be connected only to the designated IoT-VLAN and shall not be bridged to the administrative or examination network under any circumstance."
+      },
+      {
+        "claim": "An edge node shall not be connected to the administrative or examination network.",
+        "supported": true,
+        "evidence": "Every edge node shall be connected only to the designated IoT-VLAN and shall not be bridged to the administrative or examination network under any circumstance."
+      }
+    ],
+    "faithfulness_score": 1.0,
+    "recall_at_k": true,
+    "latency_ms": 2736.8,
+    "naive_is_correct": true,
+    "naive_text_similarity": 0.854,
+    "naive_number_overlap": 0.854,
+    "verifiable_shown": true,
+    "verifiable_is_correct": true,
+    "error": null
+  }
+]

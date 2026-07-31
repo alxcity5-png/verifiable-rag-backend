@@ -19,7 +19,11 @@ collection = client.get_collection(
 )
 
 
-def retrieve_chunks(question: str, top_k: int = 3):
+def retrieve_chunks(
+    question: str,
+    document_name: str,
+    top_k: int = 3
+):
     """
     Retrieve relevant document chunks with metadata and scores.
     """
@@ -32,9 +36,12 @@ def retrieve_chunks(question: str, top_k: int = 3):
 
     # Search ChromaDB
     results = collection.query(
-        query_embeddings=[question_embedding],
-        n_results=top_k
-    )
+    query_embeddings=[question_embedding],
+    n_results=top_k,
+    where={
+        "source": document_name
+    }
+)
 
 
     retrieved_results = []

@@ -1,0 +1,22 @@
+{
+  "overall": {
+    "n_questions": 5,
+    "recall_at_k": 0.8,
+    "faithfulness": 0.5,
+    "naive_precision": 0.8,
+    "verifiable_precision": 1.0,
+    "verifiable_coverage": 0.4,
+    "avg_latency_ms": 2753.68
+  },
+  "per_domain": {
+    "Campus IT / Edge Computing Policy": {
+      "n_questions": 5,
+      "recall_at_k": 0.8,
+      "faithfulness": 0.5,
+      "naive_precision": 0.8,
+      "verifiable_precision": 1.0,
+      "verifiable_coverage": 0.4,
+      "avg_latency_ms": 2753.68
+    }
+  }
+}

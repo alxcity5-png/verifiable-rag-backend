@@ -2,22 +2,25 @@ from app.services.llm_service import generate_text
 
 
 CLAIM_VERIFICATION_PROMPT = """
-You are a strict evidence verification system.
+You are a strict fact verification assistant.
 
-Your job is to determine if the CLAIM is directly supported by the EVIDENCE.
+Determine whether the claim is supported by the evidence.
 
 Rules:
-1. Use ONLY the provided evidence.
-2. A claim is SUPPORTED if the evidence contains the same fact, even if the wording is different.
-3. Do not require word-for-word matching.
-4. Ignore missing extra details unless the claim contradicts the evidence.
+- Only use the provided evidence.
+- Do not use outside knowledge.
+- Judge meaning, not exact wording.
+- Different wording with the same meaning should be considered supported.
+- Legal terms such as "shall come into force", "will come into force", and "takes effect" should be treated as equivalent when referring to the same date.
+- If names, dates, numbers, and facts match, mark the claim as SUPPORTED.
 
-Return:
+Output format:
+
+If supported:
 SUPPORTED
-Evidence: <exact supporting sentence>
+Evidence: <exact supporting sentence from evidence>
 
-OR
-
+If not supported:
 UNSUPPORTED
 
 CLAIM:
@@ -33,7 +36,7 @@ def verify_claim(claim: str, evidence_chunks: list[str]) -> dict:
     Verify a claim against retrieved evidence.
     """
 
-    evidence = "\n\n".join(evidence_chunks)
+    evidence = "\n\n".join(evidence_chunks[:2])
 
     prompt = CLAIM_VERIFICATION_PROMPT.format(
         claim=claim,
@@ -41,11 +44,15 @@ def verify_claim(claim: str, evidence_chunks: list[str]) -> dict:
     )
 
     response = generate_text(prompt).strip()
+    print("VERIFIER RESPONSE:")
+    print(response)
 
-    print("VERIFIER RESPONSE:", response)
-
-    if "SUPPORTED" in response.upper():
-        evidence_text = response.split("Evidence:", 1)[-1].strip()
+    if response.upper().startswith("SUPPORTED"):
+        evidence_text = (
+            response.replace("SUPPORTED", "", 1)
+            .replace("Evidence:", "", 1)
+            .strip()
+        )
 
         return {
             "claim": claim,

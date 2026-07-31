@@ -9,8 +9,9 @@ router = APIRouter(prefix="/query", tags=["Query"])
 @router.post("/")
 def query_documents(request: QueryRequest):
     result = answer_question(
-        question=request.question,
-        top_k=request.top_k,
-    )
+    question=request.question,
+    document_name=request.document_name,
+    top_k=request.top_k,
+)
 
     return result

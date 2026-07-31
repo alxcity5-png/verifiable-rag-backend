@@ -1,0 +1,52 @@
+[
+  {
+    "id": "CAMPUS-01",
+    "domain": "Campus IT / Edge Computing Policy",
+    "question": "How many edge nodes can be operated without registration, and how many working days before deployment must a registration application be submitted?",
+    "answer": "No person or club shall operate more than two edge nodes on the campus network without prior registration with the registering authority. \nAn application for registration shall be submitted in Form ER-1 at least seven working days before deployment.",
+    "is_correct": true,
+    "text_similarity": 0.642,
+    "number_overlap": 0.642,
+    "latency_ms": 3069.6
+  },
+  {
+    "id": "CAMPUS-02",
+    "domain": "Campus IT / Edge Computing Policy",
+    "question": "What is the fine for operating a sensitive workload without Tier-2 registration?",
+    "answer": "A fine not exceeding Rs. 2,000.",
+    "is_correct": true,
+    "text_similarity": 0.463,
+    "number_overlap": 1.0,
+    "latency_ms": 2613.8
+  },
+  {
+    "id": "CAMPUS-03",
+    "domain": "Campus IT / Edge Computing Policy",
+    "question": "When do these Regulations come into force?",
+    "answer": "I could not find this information in the document.",
+    "is_correct": false,
+    "text_similarity": 0.0,
+    "number_overlap": 0.0,
+    "latency_ms": 2698.5
+  },
+  {
+    "id": "CAMPUS-04",
+    "domain": "Campus IT / Edge Computing Policy",
+    "question": "Who is the registering authority under these Regulations?",
+    "answer": "The Campus IT Security Office.",
+    "is_correct": true,
+    "text_similarity": 0.674,
+    "number_overlap": 0.674,
+    "latency_ms": 2649.7
+  },
+  {
+    "id": "CAMPUS-05",
+    "domain": "Campus IT / Edge Computing Policy",
+    "question": "What network can an edge node be connected to, and what is it explicitly barred from?",
+    "answer": "An edge node shall be connected to the designated IoT-VLAN. \nAn edge node shall not be bridged to the administrative or examination network.",
+    "is_correct": true,
+    "text_similarity": 0.854,
+    "number_overlap": 0.854,
+    "latency_ms": 2736.8
+  }
+]
